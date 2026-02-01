@@ -1,16 +1,15 @@
+
 /* ===============================
    EL MUNDO UNIDO – CSS MODERNO
-   Estilo inspirado en Apple
-   Sin JavaScript
+   Estilo tipo Apple
    =============================== */
 
 :root {
   --blue: #0c3c6f;
   --orange: #f36b21;
   --bg: #f5f7fa;
-  --dark: #0b0b0b;
   --text: #1d1d1f;
-  --glass: rgba(255,255,255,0.65);
+  --glass: rgba(255,255,255,0.85);
 }
 
 * {
@@ -19,12 +18,8 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -32,15 +27,14 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  min-height: 80vh;
+  min-height: 75vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   background: radial-gradient(circle at top, #184f8c, #061c33);
-  color: white;
   padding: 3rem 1.5rem;
+  color: white;
 }
 
 .logo {
@@ -50,202 +44,116 @@ body {
   border-radius: 50%;
   background: white;
   padding: 12px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
   margin-bottom: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
 }
 
 .hero h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
 }
 
 .subtitle {
-  max-width: 720px;
-  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 1rem auto 2rem;
   opacity: 0.9;
-  margin: 1rem auto 2.5rem;
 }
 
+/* ===== BUTTON ===== */
 .btn {
   display: inline-block;
   padding: 0.9rem 2.2rem;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--orange), #ff914d);
   color: white;
-  font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-  transition: transform .3s ease, box-shadow .3s ease;
+  font-weight: 600;
+  transition: all .3s ease;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
-}
-
-/* ===== NAV ===== */
-.navbar {
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(14px);
-  background: rgba(12,60,111,0.85);
-  z-index: 1000;
-}
-
-.navbar ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.8rem;
-  list-style: none;
-  padding: 1rem;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  opacity: 0.9;
-}
-
-.navbar a:hover {
-  opacity: 1;
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 /* ===== SECTIONS ===== */
 .section {
-  padding: 6rem 1.5rem;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
+  padding: 5rem 1.5rem;
+  text-align: center;
 }
 
 .section h2 {
   font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.section:hover h2 {
   color: var(--orange);
-}
-
-.section p {
-  font-size: 1.05rem;
-  max-width: 800px;
-}
-
-.highlight {
-  background: linear-gradient(180deg, #ffffff, #eef2f7);
-}
-
-/* ===== LIST ===== */
-.list {
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 0.7rem;
-}
-
-.list li {
-  list-style: none;
-  padding-left: 1.4rem;
-  position: relative;
-}
-
-.list li::before {
-  content: "•";
-  color: var(--orange);
-  position: absolute;
-  left: 0;
 }
 
 /* ===== CARDS ===== */
 .cards {
+  max-width: 1100px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 2.5rem;
-  margin-top: 3rem;
+  gap: 2rem;
 }
 
 .card {
-  background: white;
-  border-radius: 26px;
+  background: var(--glass);
   padding: 2.5rem;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  transition: transform .4s ease, box-shadow .4s ease;
 }
 
 .card:hover {
-  transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 30px 70px rgba(0,0,0,0.15);
+  transform: translateY(-12px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.2);
 }
 
-.card i {
-  font-size: 2.2rem;
-  color: var(--orange);
+/* ===== ALCANCE ===== */
+.alcance-grid {
+  max-width: 1100px;
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 2rem;
+}
+
+.alcance-card {
+  background: var(--glass);
+  border-radius: 24px;
+  padding: 2rem;
+  transition: transform .4s ease;
+}
+
+.alcance-card:hover {
+  transform: translateY(-10px);
+}
+
+.alcance-card img {
+  width: 70px;
   margin-bottom: 1rem;
 }
 
-.card h3 {
-  margin-bottom: 0.6rem;
-}
-
-/* ===== STATS ===== */
-.stat {
-  padding: 2.5rem;
-  border-radius: 22px;
-  background: var(--glass);
-  backdrop-filter: blur(20px);
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-}
-
-/* ===== DONATE ===== */
-.donate-box {
-  margin-top: 2rem;
-  padding: 3rem;
-  border-radius: 28px;
+/* ===== DONAR ===== */
+.donar {
   background: linear-gradient(135deg, #0c3c6f, #061c33);
   color: white;
-  text-align: center;
 }
 
-/* ===== CONTACT ===== */
-.contact-grid {
+/* ===== CONTACTO ===== */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 1rem 1.2rem;
-  border-radius: 16px;
+  padding: 1rem;
+  border-radius: 14px;
   border: none;
-  background: #f0f2f5;
-  margin-bottom: 1rem;
   font-size: 1rem;
-}
-
-.contact-form textarea {
-  min-height: 140px;
-}
-
-.social-links {
-  display: flex;
-  gap: 1.2rem;
-  font-size: 1.6rem;
-}
-
-.social-links a {
-  color: var(--blue);
 }
 
 /* ===== FOOTER ===== */
@@ -254,43 +162,29 @@ body {
   color: white;
   text-align: center;
   padding: 3rem 1.5rem;
-  font-size: 0.95rem;
-}
-/* GLASS EFFECT */
-.card, .alcance-card {
-  backdrop-filter: blur(8px);
-  background: rgba(255,255,255,0.85);
 }
 
-/* TITULOS CON COLOR */
-h2 {
-  color: #ff7a18;
+.footer a {
+  color: #ffb26b;
+  text-decoration: none;
+}
+
+.sociales {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   margin-bottom: 1rem;
 }
 
-/* LEGAL */
-.legal {
-  max-width: 900px;
-  margin: auto;
-  padding: 4rem 2rem;
+.sociales img {
+  width: 36px;
 }
 
-.legal h1 {
-  margin-bottom: 2rem;
-}
-
-.legal h2 {
-  margin-top: 2rem;
-}
-
-/* MOBILE FIX */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
   .logo {
     width: 90px;
+    height: 90px;
   }
 }
 
