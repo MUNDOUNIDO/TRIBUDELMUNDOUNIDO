@@ -1,107 +1,257 @@
-/* ================================
-   VARIABLES DE COLOR (ONG MODERNA)
-================================ */
-:root {
-  primary: #1a4d5f;     /* azul profundo */
-  secondary: #1fa2a6;   /* turquesa */
-  accent: #f2a93b;      /* dorado espiritual */
-  dark: #0b1f26;
-  light: #f3f9f9;
-  white: #ffffff;
-  text: #2c2c2c;
-  text-soft: #5f6f73;
-}
+/* =====================
+   RESET GLOBAL
+===================== */
 
-/* ================================
-   RESET BÁSICO
-================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(180deg, ffffff, eef7f8);
-  color: var(--text);
-  line-height: 1.8;
+  background: #f7f9fb;
+  color: #1f2933;
+  line-height: 1.7;
 }
 
-/* ================================
+/* =====================
    CONTENEDOR
-================================ */
+===================== */
+
 .container {
-  width: 92%;
-  max-width: 1200px;
+  max-width: 1150px;
   margin: auto;
+  padding: 0 1.5rem;
 }
 
-/* ================================
+/* =====================
    HEADER
-================================ */
+===================== */
+
 .header {
+  background: #ffffff;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  z-index: 100;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
 }
 
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
 }
 
-/* ================================
-   LOGO
-================================ */
 .logo-circle svg {
-  height: 70px;
-  width: auto;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.2));
 }
 
-/* ================================
-   NAV
-================================ */
+.logo-circle.small svg {
+  width: 60px;
+  height: 60px;
+}
+
 .nav a {
-  margin-left: 1.6rem;
+  margin-left: 1.5rem;
   text-decoration: none;
+  color: #334155;
   font-weight: 500;
-  color: var(primary);
+}
+
+.nav a:hover {
+  color: #1FA2A6;
+}
+
+/* =====================
+   BOTONES
+===================== */
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.7rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #F26B1D;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #d85c16;
+}
+
+.btn-secondary {
+  border: 2px solid #1FA2A6;
+  color: #1FA2A6;
+}
+
+.btn-secondary:hover {
+  background: #1FA2A6;
+  color: #fff;
+}
+
+/* =====================
+   HERO
+===================== */
+
+.hero {
+  background: linear-gradient(135deg, #1FA2A6, #1A4D5F);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+/* =====================
+   SECCIONES
+===================== */
+
+.section {
+  padding: 5rem 0;
+}
+
+.light-bg {
+  background: #eef4f6;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 2.5rem;
+  color: #1A4D5F;
+}
+
+/* =====================
+   GRID 2 COLUMNAS
+===================== */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+/* =====================
+   IMÁGENES
+===================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-round {
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* =====================
+   CARDS
+===================== */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 1rem 1.5rem 0.5rem;
+  color: #1FA2A6;
+}
+
+.card p {
+  padding: 0 1.5rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* =====================
+   LISTAS
+===================== */
+
+.list {
+  max-width: 600px;
+  margin: auto;
+  list-style: none;
+}
+
+.list li {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
-.nav a::after {
-  content: "";
+.list li::before {
+  content: "✔";
   position: absolute;
   left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: var(accent);
-  transition: width 0.3s ease;
+  color: #1FA2A6;
+  font-weight: bold;
 }
 
-.nav a:hover::after {
-  width: 100%;
-}
+/* =====================
+   DONAR
+===================== */
 
-/* ================================
-   HERO
-================================ */
-.hero {
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
+.donate {
+  background: linear-gradient(135deg, #1A4D5F, #0f2f3a);
+  color: white;
   text-align: center;
-  background:
+}
+
+.donate p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+.footer {
+  background: #0f2f3a;
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.footer p {
+  margin-top: 1rem;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
