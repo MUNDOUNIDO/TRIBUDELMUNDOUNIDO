@@ -1,0 +1,14 @@
+.logo-svg svg {
+  height: 60px;
+  width: auto;
+}
+
+.footer-logo svg {
+  height: 45px;
+}
+
+@media (max-width: 768px) {
+  .logo-svg svg {
+    height: 45px;
+  }
+}
