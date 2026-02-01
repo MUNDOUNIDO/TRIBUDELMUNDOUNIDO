@@ -87,19 +87,31 @@
   <h2>Contacto</h2>
 
   <form
-    action="https://formsubmit.co/TU_CORREO@gmail.com"
-    method="POST"
-    class="contact-form">
+  action="https://formsubmit.co/vissuetmikel0@gmail.com"
+  method="POST"
+  class="contact-form">
 
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://TU_USUARIO.github.io/mundo-unido/gracias.html">
+  <!-- Opciones ocultas -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Nuevo mensaje - EL MUNDO UNIDO">
+  <input type="hidden" name="_template" value="table">
 
-    <input type="text" name="nombre" placeholder="Tu nombre" required>
-    <input type="email" name="email" placeholder="Tu correo" required>
-    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+  <!-- Campos -->
+  <input type="text" name="nombre" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Tu correo" required>
+  <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
 
-    <button type="submit" class="btn">Enviar mensaje</button>
-  </form>
+  <button type="submit" class="btn">Enviar mensaje</button>
+</form>
+
+  <div id="gracias" class="mensaje-gracias">
+  <h3>¡Gracias por contactarnos! 🌍</h3>
+  <p>
+    Hemos recibido tu mensaje correctamente.<br>
+    Muy pronto el equipo de <strong>EL MUNDO UNIDO</strong> se pondrá en contacto contigo.
+  </p>
+</div>
+
 </section>
 
 <!-- ===== FOOTER ===== -->
