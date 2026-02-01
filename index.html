@@ -7,7 +7,6 @@
   <title>Tribu del Mundo Unido | Unidad Incondicional</title>
 
   <meta name="description" content="Tribu del Mundo Unido es un movimiento global sin fines de lucro dedicado a despertar una conciencia de unidad incondicional en la humanidad.">
-  <meta name="author" content="Tribu del Mundo Unido">
 
   <link rel="stylesheet" href="css/styles.css">
 
@@ -18,28 +17,35 @@
 
 <body>
 
-<!-- HEADER -->
 <header class="header">
   <div class="container header-content">
 
-    <!-- LOGO SVG -->
-    <div class="logo-svg">
-      <svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-        <rect width="800" height="1000" fill="white"/>
+    <!-- LOGO CIRCULAR -->
+    <div class="logo-circle">
+      <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
 
-        <path d="M320,250 Q350,230 400,240 T500,260 L520,300 Q500,350 450,380 T350,400 L320,380 Z" fill="#0081C6"/>
-        <path d="M420,180 Q450,170 480,185 L500,210 L460,230 Z" fill="#0081C6"/>
+        <circle cx="400" cy="400" r="380" fill="#ffffff"/>
 
-        <g fill="none" stroke="#F16522" stroke-width="35" stroke-linecap="round">
-          <ellipse cx="400" cy="300" rx="280" ry="80" transform="rotate(-5, 400, 300)"/>
-          <ellipse cx="400" cy="300" rx="280" ry="80" transform="rotate(60, 400, 300)"/>
-          <ellipse cx="400" cy="300" rx="280" ry="80" transform="rotate(-60, 400, 300)"/>
+        <!-- símbolo -->
+        <path d="M320,330 Q350,310 400,320 T500,340 L520,380 Q500,430 450,460 T350,480 L320,460 Z" fill="#0081C6"/>
+        <path d="M420,260 Q450,250 480,265 L500,290 L460,310 Z" fill="#0081C6"/>
+
+        <g fill="none" stroke="#F16522" stroke-width="30" stroke-linecap="round">
+          <ellipse cx="400" cy="380" rx="260" ry="75" transform="rotate(-5, 400, 380)"/>
+          <ellipse cx="400" cy="380" rx="260" ry="75" transform="rotate(60, 400, 380)"/>
+          <ellipse cx="400" cy="380" rx="260" ry="75" transform="rotate(-60, 400, 380)"/>
         </g>
 
-        <g font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">
-          <text x="400" y="700" font-size="95" fill="#0081C6" letter-spacing="2">EL MUNDO</text>
-          <text x="400" y="820" font-size="95" fill="#F16522" letter-spacing="25">UNIDO</text>
-        </g>
+        <!-- texto -->
+        <text x="400" y="640"
+              text-anchor="middle"
+              font-size="90"
+              font-weight="700"
+              fill="#0081C6"
+              letter-spacing="6"
+              font-family="Arial, sans-serif">
+          MUNDO UNIDO
+        </text>
       </svg>
     </div>
 
@@ -50,12 +56,12 @@
       <a href="#global">Alcance</a>
       <a href="#donate" class="btn-secondary">Donar</a>
     </nav>
+
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="container">
+  <div class="container reveal">
     <h1>Tribu del Mundo Unido</h1>
     <p class="subtitle">
       Un movimiento global para despertar la conciencia de unidad incondicional en la humanidad.
@@ -63,41 +69,38 @@
   </div>
 </section>
 
-<!-- QUÉ ES -->
-<section class="section">
+<section class="section reveal">
   <div class="container">
     <h2>¿Qué es la Tribu del Mundo Unido?</h2>
     <p>
-      La Tribu del Mundo Unido es una fundación sin fines de lucro y un movimiento global que conecta,
-      invita y co-crea con personas, líderes e instituciones comprometidas con la evolución personal
-      y planetaria.
+      Somos una fundación sin fines de lucro y un movimiento global que conecta, invita y co-crea
+      con personas comprometidas con la evolución personal y planetaria.
     </p>
   </div>
 </section>
 
-<!-- VISIÓN Y MISIÓN -->
-<section class="section light-bg grid-2 container" id="vision">
+<section class="section light-bg grid-2 container reveal" id="vision">
   <div>
     <h2>Visión</h2>
     <p>
-      Crear una conciencia de unidad incondicional en todo el mundo, sin barreras de género, idioma,
-      cultura, religión o nacionalidad.
+      Crear una conciencia de unidad incondicional en todo el mundo,
+      sin barreras de género, idioma, cultura o religión.
     </p>
   </div>
 
   <div id="mission">
     <h2>Misión</h2>
     <p>
-      Elevar la conciencia, la armonía, la espiritualidad y el amor a nivel global mediante la creación
-      de consejos de unidad en todos los niveles de la sociedad.
+      Elevar la conciencia, la armonía y la espiritualidad a nivel global
+      mediante consejos de unidad en todos los niveles de la sociedad.
     </p>
   </div>
 </section>
 
-<!-- INICIATIVAS -->
-<section class="section" id="initiatives">
+<section class="section reveal" id="initiatives">
   <div class="container">
     <h2>Principales Iniciativas</h2>
+
     <div class="cards">
       <div class="card">Conclaves de Unidad Comunitarios</div>
       <div class="card">Cumbres Regionales “Somos Uno”</div>
@@ -107,8 +110,7 @@
   </div>
 </section>
 
-<!-- ALCANCE -->
-<section class="section light-bg" id="global">
+<section class="section light-bg reveal" id="global">
   <div class="container stats">
     <div><strong>6</strong><span>Continentes</span></div>
     <div><strong>200</strong><span>Naciones</span></div>
@@ -117,8 +119,7 @@
   </div>
 </section>
 
-<!-- DONAR -->
-<section class="section donate" id="donate">
+<section class="section donate reveal" id="donate">
   <div class="container">
     <h2>Apoya Nuestra Misión</h2>
     <p>contacto@tribudelmundounido.org</p>
@@ -129,15 +130,24 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-content">
-    <div class="logo-svg footer-logo">
-      <!-- mismo SVG reutilizado -->
-    </div>
     <p>© 2007–2026 Tribu del Mundo Unido. Todos los derechos reservados.</p>
   </div>
 </footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  reveals.forEach(r => observer.observe(r));
+</script>
 
 </body>
 </html>
