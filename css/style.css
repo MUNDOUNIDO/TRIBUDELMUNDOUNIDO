@@ -52,17 +52,6 @@ body {
   box-shadow: 0 25px 50px rgba(0,0,0,0.4);
 }
 
-.hero h1 {
-  font-size: clamp(2.6rem, 5vw, 4.2rem);
-}
-
-.subtitle {
-  max-width: 760px;
-  margin: 1.2rem auto 2.5rem;
-  opacity: 0.9;
-  font-size: 1.1rem;
-}
-
 /* ===== BUTTON ===== */
 .btn {
   display: inline-block;
@@ -87,26 +76,22 @@ body {
 }
 
 .section h2 {
-  font-size: clamp(2.1rem, 4vw, 3.2rem);
-  margin-bottom: 1.6rem;
   color: var(--orange);
+  margin-bottom: 1.6rem;
 }
 
-.section p {
+/* ===== IMÁGENES MODERNAS ===== */
+.img-main {
   max-width: 900px;
-  margin: 0.8rem auto;
-  font-size: 1.05rem;
-}
-
-/* ===== NUESTRA ESENCIA ===== */
-.esencia {
-  background: linear-gradient(180deg, #ffffff, #eef3fb);
-}
-
-.esencia img {
-  margin: 2.5rem auto;
+  margin: 3rem auto;
   border-radius: var(--radius);
-  box-shadow: 0 30px 70px rgba(0,0,0,0.15);
+  box-shadow: 0 40px 90px rgba(0,0,0,0.18);
+  transition: transform .6s ease, box-shadow .6s ease;
+}
+
+.img-main:hover {
+  transform: scale(1.03);
+  box-shadow: 0 60px 120px rgba(0,0,0,0.28);
 }
 
 /* ===== CARDS ===== */
@@ -126,21 +111,8 @@ body {
   transition: all .4s ease;
 }
 
-.card img {
-  width: 70px;
-  margin: 0 auto 1.2rem;
-}
-
 .card:hover {
   transform: translateY(-14px);
-  box-shadow: 0 35px 80px rgba(0,0,0,0.22);
-}
-
-/* ===== CÓMO LO HACEMOS ===== */
-.como-hacemos img {
-  margin: 3rem auto;
-  border-radius: var(--radius);
-  box-shadow: 0 30px 80px rgba(0,0,0,0.18);
 }
 
 /* ===== PRINCIPIOS ===== */
@@ -149,133 +121,9 @@ body {
   color: white;
 }
 
-.principios-grid {
-  max-width: 1000px;
-  margin: 3rem auto 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 2rem;
-}
-
-.principios-grid div {
-  background: rgba(255,255,255,0.12);
-  padding: 2rem;
-  border-radius: 20px;
-  font-weight: 500;
-}
-
-/* ===== INSTITUCIONAL + TIMELINE ===== */
-.institucional-timeline {
-  background: linear-gradient(135deg, #eef3fb, #ffffff);
-}
-
-.institucional-grid {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 3.5rem;
-  align-items: center;
-}
-
-.institucional-text h2 {
-  color: var(--blue);
-}
-
-.institucional-text p {
-  margin-bottom: 1rem;
-}
-
-/* TIMELINE */
-.timeline {
-  display: grid;
-  gap: 1.3rem;
-}
-
-.timeline-item {
-  background: white;
-  padding: 1.5rem 1.7rem;
-  border-radius: 20px;
-  border-left: 5px solid var(--orange);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-  transition: transform .3s ease;
-}
-
-.timeline-item:hover {
-  transform: translateX(8px);
-}
-
-.timeline-item span {
-  display: block;
-  font-weight: 700;
-  color: var(--orange);
-  margin-bottom: 0.4rem;
-}
-
-/* ===== ALAS ===== */
-.alas ul {
-  max-width: 900px;
-  margin: 3rem auto 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.alas li {
-  background: var(--glass);
-  padding: 1.5rem;
-  border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-}
-
-/* ===== FILOSOFÍA ===== */
-.filosofia {
-  background: linear-gradient(180deg, #ffffff, #f5f7fa);
-}
-
-/* ===== COMPROMISO ===== */
-.compromiso img {
-  margin: 3rem auto;
-  border-radius: var(--radius);
-  box-shadow: 0 30px 70px rgba(0,0,0,0.15);
-}
-
-/* ===== ALCANCE ===== */
-.alcance-grid {
-  max-width: 1100px;
-  margin: 3rem auto 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 2.5rem;
-}
-
-.alcance-card {
-  background: var(--glass);
-  border-radius: 24px;
-  padding: 2.2rem;
-  transition: transform .4s ease;
-}
-
-.alcance-card:hover {
-  transform: translateY(-12px);
-}
-
-.alcance-card img {
-  width: 70px;
-  margin-bottom: 1rem;
-}
-
-/* ===== FUTURO ===== */
-.futuro {
-  background: linear-gradient(135deg, #0c3c6f, #061c33);
-  color: white;
-}
-
-/* ===== DONAR ===== */
-.donar {
-  background: linear-gradient(135deg, #0c3c6f, #061c33);
-  color: white;
+.principios-grid img {
+  width: 40px;
+  margin-bottom: .8rem;
 }
 
 /* ===== FOOTER ===== */
@@ -286,32 +134,15 @@ body {
   padding: 3rem 1.5rem;
 }
 
-.footer a {
-  color: #ffb26b;
-  text-decoration: none;
+.footer-map {
+  max-width: 420px;
+  margin: 2rem auto;
+  opacity: 0.6;
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .institucional-grid {
     grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .timeline-item {
-    border-left: none;
-    border-top: 4px solid var(--orange);
   }
 }
-
-@media (max-width: 600px) {
-  .logo {
-    width: 90px;
-    height: 90px;
-  }
-
-  .section {
-    padding: 4rem 1.2rem;
-  }
-}
-
