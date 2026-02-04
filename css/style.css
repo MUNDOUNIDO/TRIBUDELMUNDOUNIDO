@@ -186,26 +186,44 @@ h2 {
    SECCIÓN 5 – PRINCIPIOS (COLLAGE)
 ===================================================== */
 .principios {
-  background: linear-gradient(135deg, #0c3c6f, #061c33);
-  color: white;
+  background: linear-gradient(135deg, #fdfefe, #eef3f8);
 }
 
-.principios-grid {
+.principios-collage {
   display: grid;
-  gap: 1.8rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 }
 
-.principios-grid div {
-  background: rgba(255,255,255,.12);
-  padding: 2rem;
+.principio-item {
+  background: white;
   border-radius: var(--radius);
+  padding: 3rem 2.5rem;
   text-align: center;
+  box-shadow: 0 35px 70px rgba(0,0,0,.12);
+  transition: transform .4s ease;
 }
 
-.principios-grid img {
-  width: 42px;
-  margin-bottom: .6rem;
+.principio-item:hover {
+  transform: translateY(-12px);
 }
+
+.principio-item img {
+  width: 96px;
+  margin: 0 auto 1.8rem;
+}
+
+.principio-item h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--blue);
+}
+
+.principio-item p {
+  font-size: 1rem;
+  opacity: .9;
+}
+
 
 /* =====================================================
    SECCIÓN 6 – LÍNEA DE TIEMPO
