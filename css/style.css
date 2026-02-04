@@ -1,163 +1,251 @@
-:root {
-  --blue: #0c3c6f;
-  --orange: #f36b21;
-  --dark: #061c33;
-  --bg: #f5f7fa;
-  --text: #1d1d1f;
-  --glass: rgba(255,255,255,0.95);
-  --radius: 32px;
-}
-
-/* RESET */
+/* =========================
+   RESET & BASE
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html { scroll-behavior: smooth; }
+:root {
+  --bg-light: #f7f9fb;
+  --bg-soft: #eef2f5;
+  --bg-dark: #0f172a;
+  --primary: #2563eb;
+  --secondary: #22c55e;
+  --accent: #facc15;
+  --text-dark: #1f2933;
+  --text-light: #ffffff;
+  --card-bg: #ffffff;
+  --border-soft: rgba(0,0,0,0.08);
+}
 
 body {
-  font-family: "Segoe UI", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.65;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
 }
 
-img { max-width: 100%; display: block; }
-
-/* CONTAINER */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 1.5rem;
-}
-
-/* REVEAL */
-.reveal {
-  opacity: 0;
-  animation: fadeUp 1s ease forwards;
-}
-.delay-1 { animation-delay: .2s; }
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(60px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* SECTION */
+/* =========================
+   GLOBAL SECTIONS
+========================= */
 .section {
-  padding: 6rem 0;
+  padding: 5rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section h2 {
-  color: var(--orange);
   text-align: center;
-  margin-bottom: 3rem;
-  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 2.5rem;
+  font-weight: 700;
 }
 
-/* ===============================
-   SECCIÓN 5 · PRINCIPIOS (COLLAGE)
-================================= */
-
-.principios {
-  background: linear-gradient(135deg, #fdfefe, #eef3f8);
-}
-
-.principios-collage {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-}
-
-.principio-item {
-  background: white;
-  border-radius: var(--radius);
-  padding: 3rem 2.5rem;
+/* =========================
+   HERO / SECCIÓN 1
+========================= */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(
+    rgba(15,23,42,0.65),
+    rgba(15,23,42,0.65)
+  ),
+  url("assets/img/hero-humanity-unity.jpg") center/cover no-repeat;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  box-shadow: 0 35px 70px rgba(0,0,0,.12);
-  transition: transform .4s ease;
-}
-
-.principio-item:hover {
-  transform: translateY(-12px);
-}
-
-.principio-item img {
-  width: 96px;
-  margin: 0 auto 1.8rem;
-}
-
-.principio-item h4 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  color: var(--blue);
-}
-
-.principio-item p {
-  font-size: 1rem;
-  opacity: .9;
-}
-
-/* ===============================
-   LÍNEA DE TIEMPO (MÁS COLOR)
-================================= */
-
-.timeline {
-  background: linear-gradient(135deg, #ffffff, #f2f6fb);
   padding: 2rem;
-  border-radius: var(--radius);
+}
+
+.hero img {
+  max-width: 150px;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+.hero .btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  background: var(--secondary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.hero .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.25);
+}
+
+/* =========================
+   SECCIÓN 2 – INTRO
+========================= */
+.intro-box {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  box-shadow: 0 25px 60px rgba(0,0,0,.08);
+}
+
+.intro-box img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+/* =========================
+   SECCIÓN 3 – TARJETAS
+========================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+/* =========================
+   SECCIÓN 4 – PARALLAX
+========================= */
+.parallax {
+  background: linear-gradient(
+    rgba(255,255,255,.9),
+    rgba(255,255,255,.9)
+  ),
+  url("assets/img/institucional-unity.jpg") center/cover fixed;
+}
+
+.parallax-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.parallax-content img {
+  max-width: 380px;
+  margin: 0 auto;
+  display: block;
+}
+
+.parallax-text {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,.1);
+}
+
+/* =========================
+   SECCIÓN 5 – PRINCIPIOS (COLLAGE)
+========================= */
+.principios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.principios-grid div {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,.1);
+}
+
+.principios-grid img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   SECCIÓN 6 – LÍNEA DE TIEMPO
+========================= */
+.timeline {
+  background: linear-gradient(135deg, #e0f2fe, #ecfeff);
+  border-radius: 30px;
+  padding: 4rem 2rem;
 }
 
 .timeline-item {
-  background: white;
-  padding: 1.4rem 1.6rem;
-  margin-bottom: 1rem;
-  border-left: 6px solid var(--orange);
-  border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0,0,0,.08);
-  font-weight: 500;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 18px;
+  margin-bottom: 2rem;
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
 }
 
-/* ===============================
-   AYUDA DEL MUNDO UNIDO (COLOR)
-================================= */
-
-.section-ayuda {
-  background: linear-gradient(135deg, #fefefe, #f1f7fc);
+/* =========================
+   SECCIÓN 7 – AYUDA DEL MUNDO UNIDO
+========================= */
+.ayuda {
+  background: linear-gradient(135deg, #dcfce7, #f0fdf4);
+  border-radius: 30px;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-.ayuda-box {
-  background: white;
-  padding: 2.5rem;
-  border-radius: var(--radius);
-  box-shadow: 0 30px 60px rgba(0,0,0,.12);
+.ayuda h2 {
+  color: #065f46;
 }
 
-.ayuda-list {
+.ayuda .btn {
   margin-top: 2rem;
-  list-style: none;
+  padding: 1.2rem 3rem;
+  font-size: 1.2rem;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
 }
 
-.ayuda-list li {
-  padding: .6rem 0;
-  font-weight: 500;
-  color: var(--blue);
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: var(--bg-dark);
+  color: #cbd5e1;
+  text-align: center;
+  padding: 3rem 1.5rem;
 }
 
-/* ===============================
+/* =========================
    RESPONSIVE
-================================= */
-
+========================= */
 @media (max-width: 900px) {
-  .principios-collage {
+  .intro-box,
+  .parallax-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
   }
 
-  .principio-item img {
-    width: 84px;
+  .hero img {
+    max-width: 120px;
   }
 }
 
