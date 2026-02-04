@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL MUNDO UNIDO</title>
+
+  <!-- CSS PRINCIPAL -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- =====================================================
+  HERO / PORTADA
+===================================================== -->
+<!-- ===== SECCIÓN 1 · HERO ===== -->
+<header class="hero section-1 snap">
+  <div class="hero-bg"></div>
+
+  <div class="hero-content reveal">
+    <img src="assets/img/logo-twu.jpeg" class="logo" alt="EL MUNDO unido">
+
+    <h1>EL MUNDO unido</h1>
+
+    <p class="subtitle">
+      Un movimiento global para la unidad incondicional de la humanidad
+    </p>
+
+    <p class="slogan">
+      Juntos recordamos que somos una sola humanidad
+    </p>
+
+    <a href="#donar" class="btn btn-primary btn-donar">
+      Donar
+    </a>
+  </div>
+</header>
+
+
+<!-- =====================================================
+  NUESTRA ESENCIA
+===================================================== -->
+<!-- ===== SECCIÓN 2 · NUESTRA ESENCIA ===== -->
+<section class="section section-2 snap">
+  <div class="container grid-2">
+
+    <!-- TEXTO -->
+    <div class="esencia-box reveal">
+      <h2>Nuestra Esencia</h2>
+
+      <p>
+        Vivimos un momento clave en la historia de la humanidad.
+        Los desafíos globales actuales requieren algo más que soluciones aisladas:
+        requieren conciencia, cooperación y unidad real entre las personas.
+      </p>
+
+      <p>
+        EL MUNDO unido nace como una respuesta colectiva,
+        un espacio donde la diversidad se honra y la unidad se practica,
+        recordando que todos formamos parte de una sola humanidad.
+      </p>
+    </div>
+
+    <!-- IMAGEN -->
+    <div class="esencia-img reveal delay-1">
+      <img
+        src="assets/img/icon-consciousness.png"
+        alt="Conciencia y unidad humana"
+        class="img-esencia"
+      >
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =====================================================
+  VISIÓN / MISIÓN / ACTIVIDADES
+===================================================== -->
+<!-- ===== SECCIÓN 3 · VISIÓN · MISIÓN · ACCIÓN ===== -->
+<section class="section section-3 snap">
+  <div class="container">
+
+    <div class="principios-grid">
+
+      <!-- VISIÓN -->
+      <div class="principio-card reveal">
+        <img
+          src="assets/img/icon-vision.png"
+          alt="Visión EL MUNDO unido"
+          class="principio-icon"
+        >
+        <h3>Visión</h3>
+        <p>
+          Visualizamos un mundo donde la humanidad reconozca su
+          interconexión, actuando desde la empatía, la cooperación
+          y el respeto mutuo, construyendo un futuro más justo
+          y consciente para todos.
+        </p>
+      </div>
+
+      <!-- MISIÓN -->
+      <div class="principio-card reveal delay-1">
+        <img
+          src="assets/img/icon-love.png"
+          alt="Misión EL MUNDO unido"
+          class="principio-icon"
+        >
+        <h3>Misión</h3>
+        <p>
+          Impulsar iniciativas sociales, educativas y comunitarias
+          que despierten la conciencia de unidad, fomenten la solidaridad
+          y generen un impacto positivo y sostenible en la sociedad.
+        </p>
+      </div>
+
+      <!-- ACCIÓN -->
+      <div class="principio-card reveal delay-2">
+        <img
+          src="assets/img/icon-respect.png"
+          alt="Acción EL MUNDO unido"
+          class="principio-icon"
+        >
+        <h3>Acción</h3>
+        <p>
+          Transformamos las ideas en acciones concretas a través
+          de proyectos colaborativos, voluntariado y alianzas
+          estratégicas que fortalecen comunidades y promueven
+          el bienestar colectivo.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =====================================================
+  CÓMO LO HACEMOS (PARALLAX)
+===================================================== -->
+<!-- ===== SECCIÓN 4 · CÓMO LO HACEMOS ===== -->
+<section class="section section-4 parallax snap">
+
+  <div class="container center-content">
+
+    <!-- IMAGEN INSTITUCIONAL -->
+    <div class="institucional-img reveal">
+      <img
+        src="assets/img/institucional-unity.png"
+        alt="Acción institucional EL MUNDO unido"
+      >
+    </div>
+
+    <!-- TEXTO CENTRAL -->
+    <div class="institucional-box reveal delay-1">
+      <h2>Cómo lo Hacemos</h2>
+
+      <p>
+        A través de proyectos comunitarios, educación consciente
+        y alianzas estratégicas, impulsamos acciones que fortalecen
+        el tejido social y promueven una cultura de unidad,
+        respeto y cooperación entre las personas.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+  NUESTROS PRINCIPIOS
+===================================================== -->
+<!-- ===== SECCIÓN 5 · NUESTRO ALCANCE ===== -->
+<section class="section section-5 snap">
+  <div class="container">
+
+    <!-- TEXTO -->
+    <div class="alcance-header reveal">
+      <h2>Nuestro Alcance</h2>
+      <p>
+        Cada acción que realizamos busca generar un impacto real
+        en comunidades, educación y desarrollo humano,
+        fortaleciendo la unión y la conciencia colectiva.
+      </p>
+    </div>
+
+    <!-- COLLAGE -->
+    <div class="alcance-collage reveal delay-1">
+
+      <img src="assets/img/alcance-communities.png" alt="Comunidades unidas">
+      <img src="assets/img/alcance-education.png" alt="Educación consciente">
+      <img src="assets/img/alcance-environment.png" alt="Cuidado del entorno">
+      <img src="assets/img/alcance-humanity.png" alt="Humanidad unida">
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =====================================================
+  INSTITUCIONAL + LÍNEA DE TIEMPO
+===================================================== -->
+<!-- ===== SECCIÓN · LÍNEA DE TIEMPO ===== -->
+<section class="section section-timeline snap">
+  <div class="container">
+
+    <div class="timeline-header reveal">
+      <h2>Nuestra Historia</h2>
+      <p>
+        Cada etapa representa un paso consciente hacia la unidad,
+        el crecimiento colectivo y el impacto social.
+      </p>
+    </div>
+
+    <div class="timeline">
+
+      <!-- ITEM -->
+      <div class="timeline-item reveal">
+        <span class="timeline-date">2019</span>
+        <div class="timeline-content">
+          <h3>Nacimiento del Movimiento</h3>
+          <p>
+            Surge EL MUNDO unido como una iniciativa enfocada
+            en promover la conciencia, el respeto y la unión
+            entre las personas.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="timeline-item reveal delay-1">
+        <span class="timeline-date">2021</span>
+        <div class="timeline-content">
+          <h3>Primeros Proyectos Comunitarios</h3>
+          <p>
+            Se realizan acciones locales enfocadas en educación,
+            apoyo social y fortalecimiento comunitario.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="timeline-item reveal delay-2">
+        <span class="timeline-date">2023</span>
+        <div class="timeline-content">
+          <h3>Expansión y Alianzas</h3>
+          <p>
+            EL MUNDO unido amplía su alcance mediante colaboraciones
+            estratégicas con organizaciones afines.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="timeline-item reveal delay-3">
+        <span class="timeline-date">Hoy</span>
+        <div class="timeline-content">
+          <h3>Impacto Continuo</h3>
+          <p>
+            Continuamos construyendo un movimiento vivo,
+            enfocado en acciones reales y transformación social.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =====================================================
+  ÁREAS DONDE APOYAMOS
+===================================================== -->
+<section class="section alas snap">
+  <div class="container grid-2">
+
+    <div class="reveal">
+      <h2>ÁREAS DONDE APOYAMOS</h2>
+      <p>Áreas donde expandimos nuestra acción y servicio a la humanidad.</p>
+
+      <div class="alas-grid">
+        <div class="ala-card">Educación</div>
+        <div class="ala-card">Cultura</div>
+        <div class="ala-card">Medio Ambiente</div>
+        <div class="ala-card">Comunidades</div>
+      </div>
+    </div>
+
+    <div class="reveal delay-1">
+      <img src="assets/img/alcance-communities.png" class="img-main">
+    </div>
+
+  </div>
+</section>
+
+<!-- =====================================================
+  DONAR
+===================================================== -->
+<section class="section donar snap" id="donar">
+  <div class="container reveal">
+    <h2>Apoya la Unidad Global</h2>
+    <a href="https://www.paypal.com/donate" target="_blank" class="btn btn-primary">
+      <i class="fab fa-paypal"></i> Donar con PayPal
+    </a>
+  </div>
+</section>
+
+<!-- =====================================================
+  FOOTER
+===================================================== -->
+<footer class="footer">
+
+  <img src="assets/img/footer-world-map.png" class="footer-map reveal">
+
+  <div class="socials reveal delay-1">
+    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/0000000000"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <p class="reveal delay-2">© 2026 EL MUNDO UNIDO</p>
+
+</footer>
+
+</body>
+</html>
